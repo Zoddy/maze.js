@@ -1,7 +1,9 @@
 maze.js
 =======
 
-JavaScript library to create perfect mazes. Compatible with nodejs and browser.
+JavaScript library to create perfect mazes. Perfect maze means, that there's only one way (if you ever go forward) from the start to the end point.
+
+It's compatible with nodejs and browser.
 
 ## Usage
 

@@ -15,7 +15,7 @@ You can use [maze.js Showroom](http://zoddy.github.com/maze.js) to look, what ma
 
 There is also a file to show using on a CLI.
 
-`$ node output.js 20 10` can output these:
+`$ node output.js 25 15` can output these:
 
 * **o** - a room
 * **---** - link between rooms on the x-axis
@@ -24,23 +24,33 @@ There is also a file to show using on a CLI.
 
 
 ```
-o---o---o   o---o---o---o---o   o---o---o---o---o---o---o---o---o   o   o---o
-|       |       |           |       |                           |   |   |   |
-o---o   o---o---o   o---o   o---o---o   o---o   o---o---o---o---o   o---o   o
-    |       |       |   |               |   |               |               |
-o---o   o---o   o---o   o   o---o---o---o   o---o   o---o   o---o---o---o---o
-|       |       |       |   |                   |   |   |       |
-o---o   o---o   o---o   o---o   o---o---o---o   o---o   o---o   o   o---o---o
-|   |   |       |           |               |               |       |       |
-o   o   o   o---o   o---o   o---o---o---o   o   o---o---o---o   o---o---o   o
-    |       |       |   |               |   |   |               |           |
-o---o   o---o---o   o   o---o   o---o   o---o   o---o---o---o   o   o   o---o
-|       |           |       |       |       |               |   |   |   |   |
-o---o   o   o   o---o   o   o---o   o---o---o---o---o---o   o   o---o   o   o
-    |   |   |           |       |   |                   |   |       |   |
-o---o   o   o---o---o   o---o   o   o---o---o   o---o   o   o---o---o   o---o
-|       |   |       |       |   |           |   |   |                       |
-o   o---o   o   o   o---o---o   o   o---o   o   o   o---o   o---o   o---o   o
-|   |       |   |           |   |   |   |       |       |   |   |   |   |   |
-o---o---o---o   o---o---o---o   o---o   o---o---o   o---o---o   o---o   o---o
+o---o---o---o---o   o---o---o---o---o---o   o---o---o---o---o---o---o---o---o---o   o---o---o---o
+|       |       |   |               |   |   |           |                       |   |
+o   o   o   o---o   o---o   o---o---o   o   o   o---o   o---o---o   o---o   o---o---o   o---o---o
+|   |   |   |           |   |               |       |           |   |   |               |       |
+o---o   o   o---o   o   o   o---o---o---o   o   o---o   o---o   o   o   o   o---o---o---o   o---o
+    |   |       |   |   |               |   |   |   |       |   |   |   |   |               |
+o---o   o   o---o---o   o   o---o---o   o   o   o   o---o---o   o---o   o   o   o---o---o   o   o
+|       |           |   |       |   |   |   |   |                       |   |   |       |   |   |
+o---o   o---o   o---o   o   o---o   o   o---o   o---o---o---o---o   o---o   o   o   o   o---o   o
+|           |           |   |       |                           |   |       |   |   |           |
+o   o---o   o---o---o   o---o   o---o   o---o---o---o---o---o   o   o---o---o   o   o   o---o---o
+    |   |   |       |           |       |                   |   |               |   |   |   |
+o---o   o   o---o   o   o---o---o   o---o   o---o   o---o   o   o---o---o---o   o   o---o   o---o
+|       |       |   |   |           |   |   |   |   |   |   |       |   |       |   |           |
+o   o   o   o---o   o   o   o---o   o   o   o   o---o   o   o---o---o   o   o---o   o---o---o   o
+|   |   |       |   |   |   |   |       |   |           |               |                       |
+o   o---o---o   o   o   o   o   o---o---o   o   o---o   o---o   o---o   o---o   o---o---o   o---o
+|           |       |   |   |                   |   |       |   |   |       |   |       |   |
+o---o   o   o---o---o   o---o   o---o   o---o---o   o---o---o   o   o---o---o   o   o---o   o---o
+|   |   |           |           |   |   |   |   |               |               |   |           |
+o   o   o---o---o   o---o---o   o   o   o   o   o   o---o---o---o   o---o---o---o   o   o---o---o
+|   |           |           |   |   |   |   |       |               |       |       |   |
+o   o   o---o   o---o---o---o   o   o---o   o---o---o   o---o   o   o---o   o   o---o   o---o---o
+|   |   |   |   |               |                       |   |   |       |   |   |               |
+o   o---o   o   o   o---o---o   o---o   o---o---o   o---o   o   o---o---o   o   o   o---o---o   o
+|           |       |       |       |   |       |   |   |   |               |   |   |       |   |
+o---o---o   o---o---o   o   o---o   o   o---o   o   o   o   o---o---o---o---o   o   o   o   o   o
+        |               |       |   |       |   |       |                       |   |   |   |   |
+o---o---o---o---o---o---o---o   o---o---o---o   o---o---o   o---o---o---o---o---o---o   o---o---o
 ```

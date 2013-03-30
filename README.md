@@ -24,33 +24,43 @@ There is also a file to show using on a CLI.
 
 
 ```
-o---o---o---o---o   o---o---o---o---o---o   o---o---o---o---o---o---o---o---o---o   o---o---o---o
-|       |       |   |               |   |   |           |                       |   |
-o   o   o   o---o   o---o   o---o---o   o   o   o---o   o---o---o   o---o   o---o---o   o---o---o
-|   |   |   |           |   |               |       |           |   |   |               |       |
-o---o   o   o---o   o   o   o---o---o---o   o   o---o   o---o   o   o   o   o---o---o---o   o---o
-    |   |       |   |   |               |   |   |   |       |   |   |   |   |               |
-o---o   o   o---o---o   o   o---o---o   o   o   o   o---o---o   o---o   o   o   o---o---o   o   o
-|       |           |   |       |   |   |   |   |                       |   |   |       |   |   |
-o---o   o---o   o---o   o   o---o   o   o---o   o---o---o---o---o   o---o   o   o   o   o---o   o
-|           |           |   |       |                           |   |       |   |   |           |
-o   o---o   o---o---o   o---o   o---o   o---o---o---o---o---o   o   o---o---o   o   o   o---o---o
-    |   |   |       |           |       |                   |   |               |   |   |   |
-o---o   o   o---o   o   o---o---o   o---o   o---o   o---o   o   o---o---o---o   o   o---o   o---o
-|       |       |   |   |           |   |   |   |   |   |   |       |   |       |   |           |
-o   o   o   o---o   o   o   o---o   o   o   o   o---o   o   o---o---o   o   o---o   o---o---o   o
-|   |   |       |   |   |   |   |       |   |           |               |                       |
-o   o---o---o   o   o   o   o   o---o---o   o   o---o   o---o   o---o   o---o   o---o---o   o---o
-|           |       |   |   |                   |   |       |   |   |       |   |       |   |
-o---o   o   o---o---o   o---o   o---o   o---o---o   o---o---o   o   o---o---o   o   o---o   o---o
-|   |   |           |           |   |   |   |   |               |               |   |           |
-o   o   o---o---o   o---o---o   o   o   o   o   o   o---o---o---o   o---o---o---o   o   o---o---o
-|   |           |           |   |   |   |   |       |               |       |       |   |
-o   o   o---o   o---o---o---o   o   o---o   o---o---o   o---o   o   o---o   o   o---o   o---o---o
-|   |   |   |   |               |                       |   |   |       |   |   |               |
-o   o---o   o   o   o---o---o   o---o   o---o---o   o---o   o   o---o---o   o   o   o---o---o   o
-|           |       |       |       |   |       |   |   |   |               |   |   |       |   |
-o---o---o   o---o---o   o   o---o   o   o---o   o   o   o   o---o---o---o---o   o   o   o   o   o
-        |               |       |   |       |   |       |                       |   |   |   |   |
-o---o---o---o---o---o---o---o   o---o---o---o   o---o---o   o---o---o---o---o---o---o   o---o---o
+o---o---o   o---o---o---o   o---o---o   o---o---o   o---o---o---o---o---o---o---o---o---o---o---o---o---o---o---o   o
+|           |           |   |       |           |   |   |                                                       |   |
+o   o---o---o   o---o   o   o   o---o   o---o   o---o   o---o---o---o---o---o   o   o---o   o---o---o---o   o---o   o
+|   |           |   |   |   |       |   |   |   |               |           |   |   |   |   |           |   |       |
+o---o   o---o---o   o   o   o---o   o---o   o   o---o   o---o   o   o---o   o   o---o   o   o---o   o---o   o---o---o
+|       |           |   |   |   |           |   |       |   |   |   |       |           |       |   |               |
+o---o   o---o   o---o   o   o   o   o---o   o   o   o---o   o   o   o---o   o---o---o   o---o---o   o---o---o---o   o
+    |       |   |       |   |   |   |   |   |       |       |   |       |           |       |                   |   |
+o   o   o---o   o   o   o   o   o   o   o   o---o---o   o   o   o   o---o   o---o   o---o   o---o   o---o---o   o---o
+|   |   |       |   |   |       |   |   |               |   |   |   |   |   |   |       |       |           |
+o---o   o   o---o---o   o---o   o---o   o---o   o---o---o   o   o   o   o---o   o   o---o   o   o---o---o---o   o---o
+|       |                   |   |           |   |           |   |   |   |           |       |               |   |   |
+o   o---o---o---o   o---o   o   o---o---o   o   o---o---o---o   o---o   o   o---o---o   o---o---o---o   o   o---o   o
+|   |           |   |   |   |           |   |   |                           |                   |   |   |           |
+o   o   o---o   o   o   o---o   o   o---o   o   o---o---o   o---o---o---o   o---o---o---o---o   o   o---o---o---o   o
+|   |       |   |   |           |   |       |           |   |           |                   |   |       |           |
+o   o---o   o   o   o   o---o---o---o   o   o   o---o---o   o---o   o   o---o   o---o---o   o   o   o---o   o---o---o
+|       |   |   |   |       |           |   |   |               |   |       |   |       |   |   |           |
+o---o   o---o   o   o---o   o---o---o   o   o   o---o---o---o---o   o---o   o---o   o   o---o   o---o   o---o   o---o
+    |           |       |           |   |   |                       |   |           |               |   |       |   |
+o   o---o---o   o---o   o---o   o   o   o   o   o---o---o---o---o   o   o---o---o   o---o---o---o---o   o   o---o   o
+|           |   |   |       |   |   |   |   |   |               |       |           |   |               |   |   |
+o---o---o   o   o   o---o   o   o---o   o   o---o   o   o---o   o---o   o---o---o---o   o   o---o---o---o   o   o---o
+|           |   |       |       |       |           |   |   |       |                   |   |                       |
+o   o---o---o   o---o   o   o---o---o---o---o---o---o   o   o---o   o   o---o---o---o   o---o---o   o---o---o---o---o
+|   |                   |   |                           |       |   |   |           |           |       |           |
+o   o   o---o---o---o   o   o---o   o---o---o---o---o   o---o   o   o---o---o---o   o---o   o---o---o---o   o   o---o
+|   |   |   |       |   |   |       |               |       |   |                       |                   |   |
+o---o   o   o   o---o   o---o   o---o   o---o---o   o---o---o   o---o---o---o   o---o---o   o---o---o   o---o   o   o
+|           |   |               |       |                                   |   |           |       |   |       |   |
+o   o---o---o   o---o---o---o---o   o   o---o   o---o---o---o---o---o---o   o   o---o---o---o   o---o   o---o---o---o
+|   |   |                           |   |   |   |                       |   |                   |                   |
+o   o   o   o---o---o---o   o---o---o   o   o---o   o---o---o   o---o---o   o---o---o---o---o   o---o---o---o---o   o
+|   |   |   |   |           |       |   |               |   |   |                           |   |               |   |
+o   o   o   o   o---o   o---o   o   o---o   o---o   o---o   o   o---o---o---o   o---o---o---o   o---o---o---o   o   o
+|   |   |   |       |   |       |           |   |   |       |               |   |                               |   |
+o   o   o   o   o---o   o   o---o---o---o---o   o---o   o   o   o---o---o   o---o   o---o---o---o---o   o---o   o   o
+|       |   |   |       |       |                       |   |   |       |           |               |   |   |   |   |
+o---o---o   o   o---o---o---o---o   o---o---o---o---o---o---o---o   o---o---o---o---o   o---o---o---o---o   o---o   o
 ```

@@ -1,3 +1,9 @@
+/**
+ * base function for creating a maze
+ *
+ * @param {number} sizeX count of rooms on the x axis
+ * @param {number} sizeY count of rooms on the y axis
+ */
 var maze = function(sizeX, sizeY) {
   maze._directions = [{x: 0, y: -1}, {x: 1, y: 0}, {x: 0, y: 1}, {x: -1, y: 0}];
   maze._links = {};
@@ -6,6 +12,7 @@ var maze = function(sizeX, sizeY) {
     x: sizeX,
     y: sizeY
   };
+  maze._visitCount = 0;
   maze._visited = {};
 
   // create maze with startpoint
@@ -14,31 +21,49 @@ var maze = function(sizeX, sizeY) {
     y: maze._random(1, maze._size.y)
   });
 
-  return maze;
+  return maze._links;
 };
 
 
+/**
+ * this really creates the maze, room for room
+ *
+ * @param {object} room next room to visit and search, with x- and y-coords
+ */
 maze._create = function(room) {
   var nextRoom;
 
   // add room to visited rooms and to the path
-  maze._visited[room.x + ',' + room.y] = true;
+  if (maze._visited[room.x + ',' + room.y] === undefined) {
+    maze._visited[room.x + ',' + room.y] = true;
+    ++maze._visitCount;
+  }
 
   // get next random room
   nextRoom = maze._getDirection(room);
 
   if (nextRoom === false) {
-    if (Object.keys(maze._visited).length < maze._size.x * maze._size.y) {
+    if (maze._visitCount < maze._size.x * maze._size.y) {
       // ok, we are stucked, but don't visited all rooms
       maze._create(maze._path.pop());
     }
   } else {
-    maze._path.push(room);
-    maze._create(nextRoom);
+    maze._path.push(room); // add room to path
+    maze._links[room.x + ',' + room.y + '_' + nextRoom.x + ',' + nextRoom.y] = [
+      room,
+      nextRoom
+    ];
+    maze._create(nextRoom); // go to next room
   }
 };
 
 
+/**
+ * choose the next room to go
+ *
+ * @param {object} room current room to search, with x- and y-coords
+ * @return {object|boolean} returns the next room or false, if we are stucked
+ */
 maze._getDirection = function(room) {
   var directions = [],
       direction,
@@ -78,6 +103,12 @@ maze._getDirection = function(room) {
 };
 
 
+/**
+ * generates a random number between two numbers
+ *
+ * @param {number} min minimum number
+ * @param {number} max maximum number
+ */
 maze._random = function(min, max) {
   return min + parseInt(Math.random() * (max - min + 1));
 };

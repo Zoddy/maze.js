@@ -8,7 +8,11 @@ var x = parseInt(process.argv[2] || 20, 10), // get length from cli
 
 for (i = 1; i <= y; ++i) {
   for (j = 1; j <= x; ++j) {
-      process.stdout.write('o'); // add room
+      if ((i === 1 && j === 1) || (i === y && j === x)) {
+        process.stdout.write('X'); // add entry or exit room
+      } else {
+        process.stdout.write('o'); // add normal room
+      }
 
       if (
         links[j + ',' + i + '_' + (j + 1) + ',' + i] ||

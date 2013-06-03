@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/meecrom/maze.js.git"
+    "url": "git://github.com/zoddy/maze.js.git"
   },
   "keywords": [
     "maze"

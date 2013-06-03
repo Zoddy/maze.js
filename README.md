@@ -15,11 +15,9 @@ After importing the library in browser or nodejs, just use
 
 ## Example Usage
 
-You can use [maze.js Showroom](http://zoddy.github.com/maze.js) to look, what maze.js can do for you.
+You can use the cli-tool to look, what maze.js can do for you.
 
-There is also a file to show using on a CLI.
-
-`$ node output.js 25 15` can output these:
+`$ node cli.js 25 15` can output these:
 
 * **o** - a room
 * **---** - link between rooms on the x-axis
@@ -68,6 +66,16 @@ o   o   o   o   o---o   o   o---o---o---o---o   o---o   o   o   o---o---o   o---
 |       |   |   |       |       |                       |   |   |       |           |               |   |   |   |   |
 o---o---o   o   o---o---o---o---o   o---o---o---o---o---o---o---o   o---o---o---o---o   o---o---o---o---o   o---o   X
 ```
+
+## Upcoming Features
+
+- tests (!)
+- recursion detection
+- random start and end points
+- informations how long the way between start and end is
+- get start and end point with the longest route
+- analyzes (recursion, heatmaps, etc.)
+- showroom for the browser
 
 
 ## License

@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * base function for creating a maze
  *
@@ -110,7 +112,7 @@ maze._getDirection = function(room) {
  * @param {number} max maximum number
  */
 maze._random = function(min, max) {
-  return min + parseInt(Math.random() * (max - min + 1));
+  return min + parseInt(Math.random() * (max - min + 1), 10);
 };
 
 module.exports = maze;

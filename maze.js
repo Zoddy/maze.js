@@ -6,7 +6,7 @@
  * @param {number} sizeX count of rooms on the x axis
  * @param {number} sizeY count of rooms on the y axis
  */
-const maze = function(sizeX, sizeY) {
+const maze = function (sizeX, sizeY) {
   maze._directions = [{x: 0, y: -1}, {x: 1, y: 0}, {x: 0, y: 1}, {x: -1, y: 0}]
   maze._links = {}
   maze._path = []
@@ -23,13 +23,12 @@ const maze = function(sizeX, sizeY) {
   return maze._links
 }
 
-
 /**
  * this really creates the maze, room for room
  *
  * @param {object} room next room to visit and search, with x- and y-coords
  */
-maze._create = function(room) {
+maze._create = function (room) {
   // add room to visited rooms and to the path
   if (maze._visited[`${room.x},${room.y}`] === undefined) {
     maze._visited[`${room.x},${room.y}`] = true
@@ -54,14 +53,13 @@ maze._create = function(room) {
   }
 }
 
-
 /**
  * choose the next room to go
  *
  * @param {object} room current room to search, with x- and y-coords
  * @return {object|boolean} returns the next room or false, if we are stucked
  */
-maze._getDirection = function(room) {
+maze._getDirection = function (room) {
   const directions = []
   let nextRoom = {}
 
@@ -98,14 +96,13 @@ maze._getDirection = function(room) {
   return nextRoom
 }
 
-
 /**
  * generates a random number between two numbers
  *
  * @param {number} min minimum number
  * @param {number} max maximum number
  */
-maze._random = function(min, max) {
+maze._random = function (min, max) {
   return min + parseInt(Math.random() * (max - min + 1), 10)
 }
 

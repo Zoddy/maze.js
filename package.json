@@ -16,5 +16,8 @@
   "author": "André Kussmann",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "47dbcca4d5e8e590f45e81e22067cbebc3a32153"
+  "gitHead": "47dbcca4d5e8e590f45e81e22067cbebc3a32153",
+  "devDependencies": {
+    "standard": "10.0.2"
+  }
 }
